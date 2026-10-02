@@ -64,7 +64,7 @@ section{padding:5rem 1.5rem}
 .pcg{position:absolute;inset:-3px;border-radius:28px;background:conic-gradient(from 0deg,var(--acc),var(--acc2),var(--acc),var(--acc2),var(--acc));z-index:0;opacity:.5;animation:gspin 5s linear infinite}
 @keyframes gspin{to{transform:rotate(360deg)}}
 .pci{position:relative;z-index:1;background:var(--surf);border-radius:24px;padding:1.2rem;transform-style:preserve-3d;transition:transform .08s ease;cursor:pointer}
-.pci img,.pci svg{width:100%;border-radius:16px;display:block;aspect-ratio:1;object-fit:cover}
+.pci img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:16px;display:block}
 .hbdg{
   position:absolute;bottom:-14px;left:50%;transform:translateX(-50%);
   background:var(--surf);border:1px solid var(--acc);border-radius:100px;
@@ -156,7 +156,7 @@ footer{text-align:center;padding:1.6rem;font-size:.77rem;color:var(--mu);border-
 <body>
 
 <nav>
-  <div class="nl">MH.</div>
+  <div class="nl">MH</div>
   <ul class="nlinks">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -198,28 +198,10 @@ footer{text-align:center;padding:1.6rem;font-size:.77rem;color:var(--mu);border-
     <div class="sd"></div>
     <div class="ag reveal">
       <div class="pcol">
-        <!-- PHOTO CARD — swap SVG for: <img src="YOUR_PHOTO_URL" alt="Mohamed Hamza"> inside .pci -->
         <div class="pcw" id="pcw">
           <div class="pcg"></div>
           <div class="pci" id="pci">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none">
-              <defs>
-                <radialGradient id="abg" cx="50%" cy="40%" r="55%">
-                  <stop offset="0%" style="stop-color:#1e3a5a"/>
-                  <stop offset="100%" style="stop-color:#0f1623"/>
-                </radialGradient>
-              </defs>
-              <rect width="200" height="200" rx="18" fill="url(#abg)"/>
-              <circle cx="100" cy="76" r="37" style="fill:var(--acc-dim);stroke:var(--acc);stroke-width:1.5"/>
-              <path d="M28,200 Q38,148 100,144 Q162,148 172,200 Z" style="fill:var(--acc-dim);stroke:var(--acc);stroke-width:1"/>
-              <text x="100" y="83" text-anchor="middle" dominant-baseline="middle" style="fill:var(--acc);font-family:Sora,sans-serif;font-weight:700;font-size:27px">MH</text>
-              <path d="M12 50 H36 V36 H66" style="stroke:var(--acc);stroke-width:.8;opacity:.3"/>
-              <circle cx="66" cy="36" r="2" style="fill:var(--acc);opacity:.4"/>
-              <path d="M188 140 H164 V156 H132" style="stroke:var(--acc2);stroke-width:.8;opacity:.3"/>
-              <circle cx="132" cy="156" r="2" style="fill:var(--acc2);opacity:.4"/>
-              <rect x="4" y="4" width="192" height="192" rx="15" style="stroke:var(--acc);stroke-width:.7;opacity:.18;fill:none"/>
-              <text x="100" y="174" text-anchor="middle" style="fill:var(--mu);font-family:Inter,sans-serif;font-size:8px;opacity:.6">← add your photo here →</text>
-            </svg>
+            <img src="assets/profile.jpg" alt="Portrait of Mohamed Hamza.">
             <div class="hbdg">🟢 Open to Work</div>
           </div>
         </div>
@@ -284,7 +266,7 @@ footer{text-align:center;padding:1.6rem;font-size:.77rem;color:var(--mu);border-
       <div class="ecard">
         <div class="edeg">B.Tech in Artificial Intelligence &amp; Data Science</div>
         <div class="euni">Anna University</div>
-        <div class="edet">CGPA: 7.07 / 10 · Graduation: 2026</div>
+        <div class="edet">CGPA: 7.1 / 10 · Graduation: 2026</div>
       </div>
       <div>
         <div class="st" style="margin-bottom:.9rem">Certifications</div>
